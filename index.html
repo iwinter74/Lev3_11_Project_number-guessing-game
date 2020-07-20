@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Guessing Game 1-100</h1>
+    <form action="">
+            <h2>in how many rounds you think you can guess the number?</h2>
+        <article id="tries">
+            <input type="radio" name="try" id="four" checked onclick="myTries()">
+            <label for="">4</label>
+            <input type="radio" name="try" id="five" onclick="myTries()">
+            <label for="">5</label>
+            <input type="radio" name="try" id="six" onclick="myTries()">
+            <label for="">6</label>
+            <input type="radio" name="try" id="custom" onclick="myTries()">
+            <label for="">custom</label>
+            <input type="text" name="" id="input" onchange="myTries()">
+        </article>
+        <p id="counts"></p>
+        <article>
+            <input type="text" name="" id="number">
+            <input type="button" value="guess" onclick="test()" id="myGuess">
+        </article>
+        <p id="feedback"></p>
+
+
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
